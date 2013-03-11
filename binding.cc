@@ -27,6 +27,7 @@ Handle<Value> PyDict2JSON(const Arguments& args) {
     }
     
     /* Arguments for ast.literal_eval */
+    
     PyObject* PythonAST_Args = PyTuple_New(1);
     
     PyTuple_SetItem(PythonAST_Args, 0, PyString_FromString(*String::Utf8Value(args[0]->ToString())));
@@ -53,7 +54,8 @@ Handle<Value> PyDict2JSON(const Arguments& args) {
         return ThrowException(Exception::Error(String::New("诶~我的内内呢~")));
     }
     
-    /* Arguments for ast.literal_eval */
+    /* Arguments for json.dumps */
+    
     PyObject* PythonJSON_Args = PyTuple_New(1);
     
     PyTuple_SetItem(PythonJSON_Args, 0, dict);
