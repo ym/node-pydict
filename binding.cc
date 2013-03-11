@@ -51,7 +51,7 @@ Handle<Value> PyDict2JSON(const Arguments& args) {
     if (!PyCallable_Check(PythonJSON_Dumps)) {
         Py_Finalize();
         
-        return ThrowException(Exception::Error(String::New("Unable to convert PyDict to JSON string.")));
+        return ThrowException(Exception::Error(String::New("Unable to find function json.dumps.")));
     }
     
     /* Arguments for json.dumps */
