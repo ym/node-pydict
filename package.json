@@ -1,0 +1,24 @@
+{
+  "name": "pydict",
+  "version": "0.0.1",
+  "description": "Library to parse Python dictionary",
+  "main": "index.js",
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ym/node-pydict.git"
+  },
+  "keywords": [
+    "python"
+  ],
+  "author": {
+    "name": "Avelien Swan",
+    "email": "i@vii.im",
+    "url": "http://vii.im/"
+  },
+  "license": "BSD",
+  "gypfile": true,
+  "readmeFilename": "README.md"
+}
