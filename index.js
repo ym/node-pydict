@@ -6,7 +6,7 @@
 			str = binding.toJSON(str);
 
 			if(!str) {
-				throw new Error('not a valid python dict');
+				throw new Error('Unable to convert given string to PyDict.');
 			}
 
 			return JSON.parse(str);
